@@ -134,6 +134,17 @@ const Layout = ({ children }) => {
             Contact
           </Link>
         </Footer>
+
+        <div className={"open-source-disclaimer"}>
+          <p>
+            TrackQueen is an open source project. You can view the source code
+            for <a href="https://github.com/jcanelis/trackqueen">the app</a> and{" "}
+            <a href="https://github.com/jcanelis/trackqueen-website">
+              this website
+            </a>{" "}
+            on GitHub.
+          </p>
+        </div>
       </div>
     </>
   )

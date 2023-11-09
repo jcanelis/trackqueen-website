@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 // Design
-import { baseUnit } from "./constants"
+import { baseUnit, typeSpace } from "./constants"
 
 // Sohne by Klim Type Foundry
 // https://klim.co.nz/retail-fonts/soehne/
@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${baseUnit * 2}px;
     line-height: ${baseUnit * 3}px;
     text-align: center;
-    opacity: 0.7
+    opacity: 0.7;
   }
 
   strong { 
@@ -118,7 +118,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ol { 
-    text-decoration: auto
+    text-decoration: auto;
   }
 
   li {
@@ -145,15 +145,9 @@ const GlobalStyle = createGlobalStyle`
     width: ${baseUnit * 50}px;
   }
 
-  // .image-link {
-  //   display: inline-block;
-  // }
-
   .screenshot {
     width: 428px;
     display: inline-block;
-    // opacity: 1;
-    // box-shadow: 0.5px 0.4px 1.1px rgba(0, 0, 0, 0.022), 1.2px 1px 2.9px rgba(0, 0, 0, 0.031), 2.5px 1.9px 5.8px rgba(0, 0, 0, 0.039), 5.1px 4px 12px rgba(0, 0, 0, 0.048), 14px 11px 33px rgba(0, 0, 0, 0.07);
 
     @media(max-width: 800px) {
       width: 290px;
@@ -164,13 +158,44 @@ const GlobalStyle = createGlobalStyle`
   .activeNav {
     text-decoration: none;
     cursor: initial;
-    opacity: 0.6
+    opacity: 0.6;
   }
 
   // YouTube embeds
   .embedVideoContainer {
     margin: ${baseUnit * 3}px 0 ${baseUnit * 2}px;
   }
+
+  .open-source-disclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: ${baseUnit * 4}px ${baseUnit * 3}px;
+  }
+
+  .open-source-disclaimer p {
+    text-align: center;
+    font-size: ${typeSpace * 4}px;
+    line-height: ${typeSpace * 6}px;
+    font-family: "Sohne Mono Buch";
+    letter-spacing: 0.2px;
+    color: rgba(142, 128, 108, 1)
+  }
+
+  .open-source-disclaimer a {
+    text-align: center;
+    font-size: ${typeSpace * 4}px;
+    line-height: ${typeSpace * 6}px;
+    font-family: "Sohne Mono Buch";
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .open-source-disclaimer a:hover {
+    transition: color 0.2s ease;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
 `
 
 export default GlobalStyle
