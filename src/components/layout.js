@@ -107,10 +107,10 @@ const Layout = ({ children }) => {
           <Subheader>Learn more about your music.</Subheader>
 
           <Button
-            text={"Download the iOS beta"}
+            text={"Download on the App Store"}
             func={() => {
               window.location.href =
-                "https://testflight.apple.com/join/YFi7Bj7C"
+                "https://apps.apple.com/us/app/trackqueen/id1622531765"
             }}
           />
         </Wrapper>
