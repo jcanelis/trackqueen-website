@@ -16,7 +16,7 @@ const Seo = ({ children }) => {
       <meta name="description" content={tagline} />
 
       {/* App Store banner */}
-      <meta name="trackqueen" content="app-id=1622531765" />
+      <meta name="apple-itunes-app" content="app-id=1622531765" />
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
