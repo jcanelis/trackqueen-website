@@ -15,6 +15,9 @@ const Seo = ({ children }) => {
       <meta name="robots" content="index, follow" />
       <meta name="description" content={tagline} />
 
+      {/* App Store banner */}
+      <meta name="trackqueen" content="app-id=1622531765" />
+
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:author" content="John Canelis" />
