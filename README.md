@@ -1,5 +1,7 @@
 [![Lint & Gatsby Build](https://github.com/jcanelis/trackqueen-website/actions/workflows/gatsby-build-prod.yml/badge.svg)](https://github.com/jcanelis/trackqueen-website/actions/workflows/gatsby-build-prod.yml)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8ab41f9-4478-421d-b762-8ae7ebc81fc6/deploy-status)](https://app.netlify.com/sites/mellow-heliotrope-747e07/deploys)
+
 ## TrackQueen website 💿 👑
 
 Learn more about your music. TrackQueen gives you analysis, background info, comments, lyrics, videos and other content about your currently playing song.
