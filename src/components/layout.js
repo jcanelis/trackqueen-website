@@ -63,6 +63,8 @@ const Footer = styled.footer`
 
   @media (max-width: 1400px) {
     flex-direction: column;
+    padding: ${baseUnit * 4}px ${baseUnit * 3}px ${baseUnit * 6}px
+      ${baseUnit * 6}px;
   }
 
   a {
