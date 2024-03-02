@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export default function getScreenshots() {
   const data = useStaticQuery(graphql`
-    query getScreenshotss {
+    query getScreenshots {
       allContentfulScreenshots(
         filter: { contentful_id: { eq: "6ldjvkr97ZtnzWJJyDQkxr" } }
       ) {
@@ -14,10 +14,10 @@ export default function getScreenshots() {
               description
               gatsbyImageData(
                 formats: WEBP
-                quality: 55
+                quality: 65
                 placeholder: BLURRED
                 backgroundColor: "#333333"
-                width: 428
+                width: 430
               )
               publicUrl
             }

@@ -146,7 +146,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .screenshot {
-    width: 428px;
+    width: 430px;
     display: inline-block;
 
     @media(max-width: 800px) {
