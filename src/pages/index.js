@@ -39,7 +39,15 @@ export default function Home() {
             overflowX: "scroll",
           }}
         >
-          <ul style={{ width: "max-content", paddingBottom: "24px" }}>
+          <ul
+            style={{
+              width: "max-content",
+              paddingTop: "16px",
+              paddingLeft: "24px",
+              paddingBottom: "8px",
+              paddingRight: "48px",
+            }}
+          >
             {screenshots[0].node.screenshots.map((node, index) => {
               const image = getImage(node)
               const loading = index > 3 ? "lazy" : "eager"

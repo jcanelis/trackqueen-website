@@ -147,6 +147,7 @@ const GlobalStyle = createGlobalStyle`
 
   .screenshot {
     width: 430px;
+    border-radius: ${baseUnit * 6}px;
     display: inline-block;
 
     @media(max-width: 800px) {
