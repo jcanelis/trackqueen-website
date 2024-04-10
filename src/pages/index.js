@@ -14,7 +14,8 @@ const Wrapper = styled.div`
 
 const ImageWrapper = styled.li`
   display: inline-block;
-  margin: ${baseUnit * 3}px;
+  margin: ${baseUnit * 3}px ${baseUnit * 1}px ${baseUnit * 3}px
+    ${baseUnit * 3}px;
 
   @media (max-width: 600px) {
     margin: ${baseUnit * 2}px 0 ${baseUnit * 2}px ${baseUnit * 3}px;
