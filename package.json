@@ -19,6 +19,7 @@
     "@eslint/compat": "^1.1.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.5.0",
+    "@hotjar/browser": "^1.0.9",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.13.6",
     "gatsby-plugin-image": "^3.13.1",

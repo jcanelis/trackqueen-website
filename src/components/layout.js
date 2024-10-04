@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // Other
+import Hotjar from "@hotjar/browser"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
@@ -77,6 +78,12 @@ const Footer = styled.footer`
 `
 
 const Layout = ({ children }) => {
+
+  // Hotjar
+  const siteId = 5159917;
+  const hotjarVersion = 6;
+  Hotjar.init(siteId, hotjarVersion);
+
   const appIconImage = getAppIcon()
   const appIcon = getImage(appIconImage)
 
