@@ -16,33 +16,33 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@eslint/compat": "^1.1.0",
+    "@eslint/compat": "^1.2.0",
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.5.0",
+    "@eslint/js": "^9.12.0",
     "@hotjar/browser": "^1.0.9",
     "babel-plugin-styled-components": "^2.1.4",
-    "gatsby": "^5.13.6",
+    "gatsby": "^5.13.7",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-remark-embed-video": "^3.2.1",
-    "gatsby-remark-images-contentful": "^6.13.1",
-    "gatsby-remark-responsive-iframe": "^6.13.1",
+    "gatsby-remark-images-contentful": "^6.13.2",
+    "gatsby-remark-responsive-iframe": "^6.13.2",
     "gatsby-source-contentful": "^8.13.2",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "gatsby-transformer-sqip": "^5.13.1",
-    "globals": "^15.4.0",
+    "globals": "^15.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "eslint": "^9.5.0",
-    "eslint-plugin-react": "^7.34.2",
-    "prettier": "^3.3.2"
+    "eslint": "^9.12.0",
+    "eslint-plugin-react": "^7.37.1",
+    "prettier": "^3.3.3"
   },
   "repository": {
     "type": "git",
