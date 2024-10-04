@@ -9,9 +9,6 @@ export default function Page() {
 }
 
 export function Head() {
-
-  const isBrowser = typeof window !== `undefined`
-
   const { title } = getTermsContent()
   return (
     <Seo>
