@@ -1,10 +1,17 @@
 import * as React from "react"
+import ContentWrapper from "../components/contentwrapper"
+import Seo from "../components/seo"
 
-const NotFoundPage = () => (
-  <main style={{ padding: 80 }}>
-    <title>TrackQueen – ssage not found</title>
-    <h1 style={{ textAlign: "center" }}>Page not found</h1>
-  </main>
-)
+export default function Page() {
+  return (
+    <ContentWrapper html={"<h1 style=text-align:center>Page not found</h1>"} />
+  )
+}
 
-export default NotFoundPage
+export function Head() {
+  return (
+    <Seo>
+      <title>TrackQueen – Page not found</title>
+    </Seo>
+  )
+}
