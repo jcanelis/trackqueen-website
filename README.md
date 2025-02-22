@@ -24,7 +24,7 @@ Here's how to get started building:
 
 ```shell
 git clone git@github.com:jcanelis/trackqueen-website.git
-nvm use 20.11.0
+nvm use 22.14.0
 cd trackqueen-website && yarn
 gatsby develop
 gatsby build
