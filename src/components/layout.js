@@ -5,8 +5,6 @@ import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // Other
-import Hotjar from "@hotjar/browser"
-import posthog from "posthog-js"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
@@ -79,18 +77,8 @@ const Footer = styled.footer`
 `
 
 const Layout = ({ children }) => {
-  // Hotjar
-  const siteId = 5159917
-  const hotjarVersion = 6
-  Hotjar.init(siteId, hotjarVersion)
-
   const appIconImage = getAppIcon()
   const appIcon = getImage(appIconImage)
-
-  posthog.init("phc_XcpeeZdlOw2t5dq7v3S2JtwikHghyQljvW2GrTontme", {
-    api_host: "https://us.i.posthog.com",
-    person_profiles: "always",
-  })
 
   return (
     <>

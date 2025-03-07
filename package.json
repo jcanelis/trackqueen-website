@@ -19,7 +19,6 @@
     "@eslint/compat": "^1.2.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.21.0",
-    "@hotjar/browser": "^1.0.9",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.14.1",
     "gatsby-plugin-image": "^3.14.0",
@@ -35,7 +34,6 @@
     "gatsby-transformer-sharp": "^5.14.0",
     "gatsby-transformer-sqip": "^5.14.0",
     "globals": "^16.0.0",
-    "posthog-js": "^1.229.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "styled-components": "^6.1.15"
