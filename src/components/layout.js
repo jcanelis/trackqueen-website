@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 // Other
 import Hotjar from "@hotjar/browser"
-import { PostHogProvider } from "posthog-js/react"
+import posthog from "posthog-js"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
@@ -84,87 +84,82 @@ const Layout = ({ children }) => {
   const hotjarVersion = 6
   Hotjar.init(siteId, hotjarVersion)
 
-  const options = {
-    api_host: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,
-  }
-
   const appIconImage = getAppIcon()
   const appIcon = getImage(appIconImage)
 
+  posthog.init("phc_XcpeeZdlOw2t5dq7v3S2JtwikHghyQljvW2GrTontme", {
+    api_host: "https://us.i.posthog.com",
+    person_profiles: "always",
+  })
+
   return (
     <>
-      <PostHogProvider
-        apiKey={process.env.REACT_APP_PUBLIC_POSTHOG_KEY}
-        options={options}
-      >
-        <GlobalStyle />
-        <div>
-          <Wrapper>
-            <IconWrapper>
-              <Link to={"/"}>
-                <GatsbyImage
-                  image={appIcon}
-                  height={`${baseUnit * 8}`}
-                  width={`${baseUnit * 8}`}
-                  layout="fixed"
-                  style={{
-                    height: `${baseUnit * 8}px`,
-                    width: `${baseUnit * 8}px`,
-                    borderRadius: `${baseUnit * 2}px`,
-                  }}
-                  alt={"TrackQueen app icon"}
-                />
-              </Link>
-            </IconWrapper>
-
-            <Link style={{ textDecoration: "none" }} to={"/"}>
-              <Header style={{ textTransform: "none" }}>TrackQueen</Header>
+      <GlobalStyle />
+      <div>
+        <Wrapper>
+          <IconWrapper>
+            <Link to={"/"}>
+              <GatsbyImage
+                image={appIcon}
+                height={`${baseUnit * 8}`}
+                width={`${baseUnit * 8}`}
+                layout="fixed"
+                style={{
+                  height: `${baseUnit * 8}px`,
+                  width: `${baseUnit * 8}px`,
+                  borderRadius: `${baseUnit * 2}px`,
+                }}
+                alt={"TrackQueen app icon"}
+              />
             </Link>
+          </IconWrapper>
 
-            <Subheader>Learn more about your music.</Subheader>
+          <Link style={{ textDecoration: "none" }} to={"/"}>
+            <Header style={{ textTransform: "none" }}>TrackQueen</Header>
+          </Link>
 
-            <Button
-              text={"Download on the App Store"}
-              func={() => {
-                window.location.href =
-                  "https://apps.apple.com/us/app/trackqueen/id1622531765"
-              }}
-            />
-          </Wrapper>
+          <Subheader>Learn more about your music.</Subheader>
 
-          {children}
+          <Button
+            text={"Download on the App Store"}
+            func={() => {
+              window.location.href =
+                "https://apps.apple.com/us/app/trackqueen/id1622531765"
+            }}
+          />
+        </Wrapper>
 
-          <Footer>
-            <Link to={"/features"} activeClassName={"activeNav"}>
-              Features
-            </Link>
+        {children}
 
-            <Link to={"/privacy-policy"} activeClassName={"activeNav"}>
-              Privacy
-            </Link>
+        <Footer>
+          <Link to={"/features"} activeClassName={"activeNav"}>
+            Features
+          </Link>
 
-            <Link to={"/terms-of-service"} activeClassName={"activeNav"}>
-              Terms
-            </Link>
+          <Link to={"/privacy-policy"} activeClassName={"activeNav"}>
+            Privacy
+          </Link>
 
-            <Link to={"/contact"} activeClassName={"activeNav"}>
-              Contact
-            </Link>
-          </Footer>
+          <Link to={"/terms-of-service"} activeClassName={"activeNav"}>
+            Terms
+          </Link>
 
-          <div className={"open-source-disclaimer"}>
-            <p>
-              TrackQueen is an open source project. You can view the source code
-              for <a href="https://github.com/jcanelis/trackqueen">the app</a>{" "}
-              and{" "}
-              <a href="https://github.com/jcanelis/trackqueen-website">
-                this website
-              </a>{" "}
-              on GitHub.
-            </p>
-          </div>
+          <Link to={"/contact"} activeClassName={"activeNav"}>
+            Contact
+          </Link>
+        </Footer>
+
+        <div className={"open-source-disclaimer"}>
+          <p>
+            TrackQueen is an open source project. You can view the source code
+            for <a href="https://github.com/jcanelis/trackqueen">the app</a> and{" "}
+            <a href="https://github.com/jcanelis/trackqueen-website">
+              this website
+            </a>{" "}
+            on GitHub.
+          </p>
         </div>
-      </PostHogProvider>
+      </div>
     </>
   )
 }
