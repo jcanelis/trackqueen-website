@@ -1,0 +1,17 @@
+{
+  "applinks": {
+	  "apps": [],
+    "details": [
+  	  {
+	      "appID": "7EYVSUVBD6.com.jcanelis.tq22",
+	      "paths": ["/auth/*"]
+	    }
+	  ],
+	  "activitycontinuation": {
+	    "apps": ["7EYVSUVBD6.com.jcanelis.tq22"]
+	  },
+	   "webcredentials": {
+	    "apps": ["7EYVSUVBD6.com.jcanelis.tq22"]
+	  }
+	}
+}
